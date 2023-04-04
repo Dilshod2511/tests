@@ -17,8 +17,8 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->unsignedBigInteger('quantity')->nullable();
-            $table->unsignedBigInteger('price')->nullable();
-            $table->unsignedBigInteger('total_price')->nullable();
+            $table->float('price')->nullable();
+            $table->float('total_price')->nullable();
             $table->timestamps();
         });
     }

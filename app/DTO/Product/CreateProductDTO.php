@@ -13,10 +13,10 @@ class CreateProductDTO
     private int $quantity;
     private mixed $qqs;
 
-    private int $price;
+    private float $price;
 
 
-    public  function __construct(string $title ,int $quantity ,int $price) {
+    public  function __construct(string $title ,int $quantity ,float $price) {
         $this->title = $title;
         $this->quantity = $quantity;
         $this->price = $price;
@@ -41,7 +41,7 @@ class CreateProductDTO
     /**
      * @return float
      */
-    public function getPrice(): int
+    public function getPrice(): float
     {
         return $this->price;
     }

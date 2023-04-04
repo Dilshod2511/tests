@@ -18,8 +18,8 @@ return new class extends Migration
             $table->string('title')->nullable();
             $table->string('status')->nullable();
             $table->unsignedBigInteger('quantity')->nullable();
-            $table->unsignedBigInteger('price')->nullable();
-            $table->unsignedBigInteger('total_price')->nullable();
+            $table->float('price')->nullable();
+            $table->float('total_price')->nullable();
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('product_id');
             $table->timestamps();

@@ -53,7 +53,7 @@ class ProductController extends Controller
         $dto = new CreateProductDTO(
             (string) $request->get('title'),
             (int)    $request->get('quantity'),
-            (int)  $request->get('price'),
+                     $request->get('price'),
         );
 
         $action->run($dto);
@@ -97,7 +97,7 @@ class ProductController extends Controller
         $dto = new CreateProductDTO(
             (string) $request->get('title',$product->title),
             (int)    $request->get('quantity',$product->quantity),
-            (int)  $request->get('price',$product->price),
+                     $request->get('price',$product->price),
         );
 
 
